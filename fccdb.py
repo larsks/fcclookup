@@ -144,10 +144,16 @@ class Entity(Base):
     )
 
     @validates("status_date")
-    def validate_status_date(
+    def validate_date_fields(
         self, name: str, value: str | datetime.date
     ) -> datetime.date | None:
         return validate_date_field(name, value)
+
+    @validates("unique_system_identifier", "linked_unique_system_identifier")
+    def validate_integer_fields(self, name: str, value: str | int | None) -> int | None:
+        if value is None or value == "":
+            return None
+        return int(value)
 
 
 class Amateur(Base):
@@ -175,6 +181,12 @@ class Amateur(Base):
     previous_operator_class: Mapped[str] = mapped_column(String(1), nullable=True)
     trustee_name: Mapped[str] = mapped_column(String(50), nullable=True)
 
+    @validates("region_code")
+    def validate_integer_fields(self, name: str, value: str | int | None) -> int | None:
+        if value is None or value == "":
+            return None
+        return int(value)
+
 
 class History(Base):
     __tablename__: str = "history"
@@ -190,7 +202,7 @@ class History(Base):
     _id: Mapped[int] = mapped_column(Integer, primary_key=True)
 
     @validates("log_date")
-    def validate_log_date(
+    def validate_date_fields(
         self, name: str, value: str | datetime.date
     ) -> datetime.date | None:
         return validate_date_field(name, value)
@@ -262,23 +274,17 @@ class LicenseHeader(Base):
     return_spectrum_cert_900: Mapped[str] = mapped_column(String(1), nullable=True)
     payment_cert_900: Mapped[str] = mapped_column(String(1), nullable=True)
 
-    @validates("grant_date")
-    def validate_grant_date(
+    @validates("grant_date", "expired_date", "cancellation_date")
+    def validate_date_fields(
         self, name: str, value: str | datetime.date
     ) -> datetime.date | None:
         return validate_date_field(name, value)
 
-    @validates("expired_date")
-    def validate_expired_date(
-        self, name: str, value: str | datetime.date
-    ) -> datetime.date | None:
-        return validate_date_field(name, value)
-
-    @validates("cancellation_date")
-    def validate_cancellation_date(
-        self, name: str, value: str | datetime.date
-    ) -> datetime.date | None:
-        return validate_date_field(name, value)
+    @validates("auction_id")
+    def validate_integer_fields(self, name: str, value: str | int | None) -> int | None:
+        if value is None or value == "":
+            return None
+        return int(value)
 
 
 class Comment(Base):
@@ -296,14 +302,8 @@ class Comment(Base):
     status_date: Mapped[datetime.date] = mapped_column(Date, nullable=True)
     _id: Mapped[int] = mapped_column(Integer, primary_key=True)
 
-    @validates("comment_date")
-    def validate_comment_date(
-        self, name: str, value: str | datetime.date
-    ) -> datetime.date | None:
-        return validate_date_field(name, value)
-
-    @validates("status_date")
-    def validate_status_date(
+    @validates("comment_date", "status_date")
+    def validate_date_fields(
         self, name: str, value: str | datetime.date
     ) -> datetime.date | None:
         return validate_date_field(name, value)
@@ -325,7 +325,7 @@ class LicenseAttachment(Base):
     _id: Mapped[int] = mapped_column(Integer, primary_key=True)
 
     @validates("attachment_date")
-    def validate_attachment_date(
+    def validate_date_fields(
         self, name: str, value: str | datetime.date
     ) -> datetime.date | None:
         return validate_date_field(name, value)
@@ -350,10 +350,16 @@ class LicenseFreeformSpecialCondition(Base):
     _id: Mapped[int] = mapped_column(Integer, primary_key=True)
 
     @validates("status_date")
-    def validate_status_date(
+    def validate_date_fields(
         self, name: str, value: str | datetime.date
     ) -> datetime.date | None:
         return validate_date_field(name, value)
+
+    @validates("unique_lic_freeform_id", "sequence_number")
+    def validate_integer_fields(self, name: str, value: str | int | None) -> int | None:
+        if value is None or value == "":
+            return None
+        return int(value)
 
 
 class LicenseSpecialCondition(Base):
@@ -373,10 +379,16 @@ class LicenseSpecialCondition(Base):
     _id: Mapped[int] = mapped_column(Integer, primary_key=True)
 
     @validates("status_date")
-    def validate_status_date(
+    def validate_date_fields(
         self, name: str, value: str | datetime.date
     ) -> datetime.date | None:
         return validate_date_field(name, value)
+
+    @validates("special_condition_code")
+    def validate_integer_fields(self, name: str, value: str | int | None) -> int | None:
+        if value is None or value == "":
+            return None
+        return int(value)
 
 
 if __name__ == "__main__":
