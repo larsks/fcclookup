@@ -1,0 +1,332 @@
+Table Abbreviations and Names
+
+A2 – Additional Application Detail
+A3 – Leased Antenna
+AC - Aircraft
+AD - Application Detail
+AG - Agreement
+AH - Additional MM Application Attachment Information
+AM – Amateur
+AP – Agreement Party
+AS - Associated Call Signs
+AN - Antenna
+AT – Attachment
+BC - Broadcast Call Sign
+BD - Bidding Credits
+BE - BRS/EBS Specific Questions
+BF - Build Out Frequency
+BL - Build Out Location
+BO - Build Out
+BT – Business Type
+CD - Closed Bidding/Designated Entity Eligibility
+CF - Call Sign/File Number
+CG – Coast & Ground
+CO - Comments
+CP - Control Point
+CS – COSER
+EC - ECIP Question and Prong 1/Prong 2 Question
+EM - Emission
+EN – Entity
+F2 - Additional Frequency Information
+F3 – Leased Frequency
+F4 – Additional Leased Frequency
+F5 – Leased Frequency Canned Special Conditions
+F6 – Leased Frequency Free-Form Special Conditions
+FA – FRC [Restricted & Commercial Operator]
+FC - Frequency Coordination
+FR – Frequency
+FS - Frequency Level Canned Special Conditions
+FF – Frequency Level Free Form Special Conditions
+FT – Frequency Type
+HD - Application License/Header
+HS – History
+IA – International Addresses
+IF - IORN/FORN Notification Data
+IR – IRAC
+L2 – Additional Location Data
+L3 – Leased Locations
+L4 – Additional Leased Location Data
+L5 – Leased Location Canned Special Conditions
+L6 – Leased Location Free-Form Special Conditions
+LA – License Attachment
+LC – Lease Classification
+LD – Lease Dates
+LH - Additional MM License Attachment Information
+LL – Lease Link
+LM - Land Mobile Administration Data
+LO - Location
+LS - Location Level Canned Special Conditions
+LF – Location Level Free Form Special Conditions
+MC - Market Coordinate
+ME - MEA Number
+MF - Market Frequency
+MH - Channel Plan Information
+MI – MDS/ITFS Administration
+MK – Market
+MP - Market Partition
+MW - Microwave
+OP - Area Of Operation Text
+O2 – Leased Area of Operation Text
+PC - Points Of Communication
+PA - Microwave Path
+P2 – Lease Microwave Path
+RA – Radial
+RC - Receiver
+RE – Reasons
+RI - Revenue Information
+RZ – Receive Zone
+SC – License Level Canned Special Conditions
+SE – Ship Exemption
+SF – License Level Free Form Special Conditions
+SG - Microwave Segments
+SH – Ship
+SI – SIDS
+SR - Ship Rescue Administration
+ST - Sector
+SV – Ship Voyage
+TA - Transfer/Assign
+TP – Transmission Method or Protocol
+TL – Tribal Lands
+UA - Unserved Area
+VC - Vanity Call Sign
+FTP File names
+a_aatc.zip All Applications for Assignment and Transfer
+a_aa_fri.zip Applications for Assignment and Transfer on Friday
+a_aa_mon.zip Applications for Assignment and Transfer on Monday
+a_aa_sat.zip Applications for Assignment and Transfer on Saturday
+a_aa_sun.zip Applications for Assignment and Transfer on Sunday
+a_aa_thu.zip Applications for Assignment and Transfer on Thursday
+a_aa_tue.zip Applications for Assignment and Transfer on Tuesday
+a_aa_wed.zip Applications for Assignment and Transfer on Wednesday
+a_aircr.zip All Applications for Aircraft
+a_ac_fri.zip Applications for Aircraft on Friday
+a_ac_mon.zip Applications for Aircraft on Monday
+a_ac_sat.zip Applications for Aircraft on Saturday
+a_ac_sun.zip Applications for Aircraft on Sunday
+a_ac_thu.zip Applications for Aircraft on Thursday
+a_ac_tue.zip Applications for Aircraft on Tuesday
+a_ac_wed.zip Applications for Aircraft on Wednesday
+a_amat.zip All Applications for Amateur
+a_am_fri.zip Applications for Amateur on Friday
+a_am_mon.zip Applications for Amateur on Monday
+a_am_sat.zip Applications for Amateur on Saturday
+a_am_sun.zip Applications for Amateur on Sunday
+a_am_thu.zip Applications for Amateur on Thursday
+a_am_tue.zip Applications for Amateur on Tuesday
+a_am_wed.zip Applications for Amateur on Wednesday
+a_cell.zip All Applications for Cellular
+a_cl_fri.zip Applications for Cellular on Friday
+a_cl_mon.zip Applications for Cellular on Monday
+a_cl_sat.zip Applications for Cellular on Saturday
+a_cl_sun.zip Applications for Cellular on Sunday
+a_cl_thu.zip Applications for Cellular on Thursday
+a_cl_tue.zip Applications for Cellular on Tuesday
+a_cl_wed.zip Applications for Cellular on Wednesday
+a_coast.zip All Applications for Coast & Ground
+a_cg_fri.zip Applications for Coast & Ground on Friday
+a_cg_mon.zip Applications for Coast & Ground on Monday
+a_cg_sat.zip Applications for Coast & Ground on Saturday
+a_cg_sun.zip Applications for Coast & Ground on Sunday
+a_cg_thu.zip Applications for Coast & Ground on Thursday
+a_cg_tue.zip Applications for Coast & Ground on Tuesday
+a_cg_wed.zip Applications for Coast & Ground on Wednesday
+a_gmrs.zip All Applications for GMRS
+a_gm_fri.zip Applications for GMRS on Friday
+a_gm_mon.zip Applications for GMRS on Monday
+a_gm_sat.zip Applications for GMRS on Saturday
+a_gm_sun.zip Applications for GMRS on Sunday
+a_gm_thu.zip Applications for GMRS on Thursday
+a_gm_tue.zip Applications for GMRS on Tuesday
+a_gm_wed.zip Applications for GMRS on Wednesday
+a_frc.zip All Applications for FRC
+a_fa_fri.zip Applications for FRC on Friday
+a_fa_mon.zip Applications for FRC on Monday
+a_fa_sat.zip Applications for FRC on Saturday
+a_fa_sun.zip Applications for FRC on Sunday
+a_fa_thu.zip Applications for FRC on Thursday
+a_fa_tue.zip Applications for FRC on Tuesday
+a_fa_wed.zip Applications for FRC on Wednesday
+a_lease.zip All Applications for Spectrum Lease
+a_ll_fri.zip Applications for Spectrum Lease on Friday
+a_ll_mon.zip Applications for Spectrum Lease on Monday
+a_ll_sat.zip Applications for Spectrum Lease on Saturday
+a_ll_sun.zip Applications for Spectrum Lease on Sunday
+a_ll_thu.zip Applications for Spectrum Lease on Thursday
+a_ll_tue.zip Applications for Spectrum Lease on Tuesday
+a_ll_wed.zip Applications for Spectrum Lease on Wednesday
+a_LMpriv.zip All Applications for Land Mobile-Private
+a_lp_fri.zip Applications for Land Mobile-Private on Friday
+a_lp_mon.zip Applications for Land Mobile-Private on Monday
+a_lp_sat.zip Applications for Land Mobile-Private on Saturday
+a_lp_sun.zip Applications for Land Mobile-Private on Sunday
+a_lp_thu.zip Applications for Land Mobile-Private on Thursday
+a_lp_tue.zip Applications for Land Mobile-Private on Tuesday
+a_lp_wed.zip Applications for Land Mobile-Private on Wednesday
+a_LMcomm.zip All Applications for Land Mobile-Commercial
+a_lc_fri.zip Applications for Land Mobile-Commercial on Friday
+a_lc_mon.zip Applications for Land Mobile-Commercial on Monday
+a_lc_sat.zip Applications for Land Mobile-Commercial on Saturday
+a_lc_sun.zip Applications for Land Mobile-Commercial on Sunday
+a_lc_thu.zip Applications for Land Mobile-Commercial on Thursday
+a_lc_tue.zip Applications for Land Mobile-Commercial on Tuesday
+a_lc_wed.zip Applications for Land Mobile-Commercial on Wednesday
+a_LMbcast.zip All Applications for Land Mobile-Broadcast Auxiliary
+a_lb_fri.zip Applications for Land Mobile-Broadcast Auxiliary on Friday
+a_lb_mon.zip Applications for Land Mobile-Broadcast Auxiliary on Monday
+a_lb_sat.zip Applications for Land Mobile-Broadcast Auxiliary on Saturday
+a_lb_sun.zip Applications for Land Mobile-Broadcast Auxiliary on Sunday
+a_lb_thu.zip Applications for Land Mobile-Broadcast Auxiliary on Thursday
+a_lb_tue.zip Applications for Land Mobile-Broadcast Auxiliary on Tuesday
+a_lb_wed.zip Applications for Land Mobile-Broadcast Auxiliary on Wednesday
+a_mdsitfs.zip All applications for MDS/ITFS
+a_mi_fri.zip Applications for MDS/ITFS on Friday
+a_mi_mon.zip Applications for MDS/ITFS on Monday
+a_mi_sat.zip Applications for MDS/ITFS on Saturday
+a_mi_sun.zip Applications for MDS/ITFS on Sunday
+a_mi_thu.zip Applications for MDS/ITFS on Thursday
+a_mi_tue.zip Applications for MDS/ITFS on Tuesday
+a_mi_wed.zip Applications for MDS/ITFS on Wednesday
+a_market.zip All applications for Market-Based
+a_mk_fri.zip Applications for Market-Based on Friday
+a_mk_mon.zip Applications for Market-Based on Monday
+a_mk_sat.zip Applications for Market-Based on Saturday
+a_mk_sun.zip Applications for Market-Based on Sunday
+a_mk_thu.zip Applications for Market-Based on Thursday
+a_mk_tue.zip Applications for Market-Based on Tuesday
+a_mk_wed.zip Applications for Market-Based on Wednesday
+a_micro.zip All Applications for Microwave
+a_mw_fri.zip Applications for Microwave on Friday
+a_mw_mon.zip Applications for Microwave on Monday
+a_mw_sat.zip Applications for Microwave on Saturday
+a_mw_sun.zip Applications for Microwave on Sunday
+a_mw_thu.zip Applications for Microwave on Thursday
+a_mw_tue.zip Applications for Microwave on Tuesday
+a_mw_wed.zip Applications for Microwave on Wednesday
+a_paging.zip All Applications for Paging
+a_pg_fri.zip Applications for Paging on Friday
+a_pg_mon.zip Applications for Paging on Monday
+a_pg_sat.zip Applications for Paging on Saturday
+a_pg_sun.zip Applications for Paging on Sunday
+a_pg_thu.zip Applications for Paging on Thursday
+a_pg_tue.zip Applications for Paging on Tuesday
+a_pg_wed.zip Applications for Paging on Wednesday
+a_ship.zip All Applications for Ship
+a_sh_fri.zip Applications for Ship on Friday
+a_sh_mon.zip Applications for Ship on Monday
+a_sh_sat.zip Applications for Ship on Saturday
+a_sh_sun.zip Applications for Ship on Sunday
+a_sh_thu.zip Applications for Ship on Thursday
+a_sh_tue.zip Applications for Ship on Tuesday
+a_sh_wed.zip Applications for Ship on Wednesday
+l_aircr.zip All Licenses for Aircraft
+l_ac_fri.zip Licenses for Aircraft on Friday
+l_ac_mon.zip Licenses for Aircraft on Monday
+l_ac_sat.zip Licenses for Aircraft on Saturday
+l_ac_sun.zip Licenses for Aircraft on Sunday
+l_ac_thu.zip Licenses for Aircraft on Thursday
+l_ac_tue.zip Licenses for Aircraft on Tuesday
+l_ac_wed.zip Licenses for Aircraft on Wednesday
+l_amat.zip All Licenses for Amateur
+l_am_fri.zip Licenses for Amateur on Friday
+l_am_mon.zip Licenses for Amateur on Monday
+l_am_sat.zip Licenses for Amateur on Saturday
+l_am_sun.zip Licenses for Amateur on Sunday
+l_am_thu.zip Licenses for Amateur on Thursday
+l_am_tue.zip Licenses for Amateur on Tuesday
+l_am_wed.zip Licenses for Amateur on Wednesday
+l_cell.zip All Licenses for Cellular
+l_cl_fri.zip Licenses for Cellular on Friday
+l_cl_mon.zip Licenses for Cellular on Monday
+l_cl_sat.zip Licenses for Cellular on Saturday
+l_cl_sun.zip Licenses for Cellular on Sunday
+l_cl_thu.zip Licenses for Cellular on Thursday
+l_cl_tue.zip Licenses for Cellular on Tuesday
+l_cl_wed.zip Licenses for Cellular on Wednesday
+l_coast.zip All Licenses for Coast & Ground
+l_cg_fri.zip Licenses for Coast & Ground on Friday
+l_cg_mon.zip Licenses for Coast & Ground on Monday
+l_cg_sat.zip Licenses for Coast & Ground on Saturday
+l_cg_sun.zip Licenses for Coast & Ground on Sunday
+l_cg_thu.zip Licenses for Coast & Ground on Thursday
+l_cg_tue.zip Licenses for Coast & Ground on Tuesday
+l_cg_wed.zip Licenses for Coast & Ground on Wednesday
+l_gmrs.zip All Licenses for GMRS
+l_gm_fri.zip Licenses for GMRS on Friday
+l_gm_mon.zip Licenses for GMRS on Monday
+l_gm_sat.zip Licenses for GMRS on Saturday
+l_gm_sun.zip Licenses for GMRS on Sunday
+l_gm_thu.zip Licenses for GMRS on Thursday
+l_gm_tue.zip Licenses for GMRS on Tuesday
+l_gm_wed.zip Licenses for GMRS on Wednesday
+l_frc.zip All Licenses for FRC
+l_fa_fri.zip Licenses for FRC on Friday
+l_fa_mon.zip Licenses for FRC on Monday
+l_fa_sat.zip Licenses for FRC on Saturday
+l_fa_sun.zip Licenses for FRC on Sunday
+l_fa_thu.zip Licenses for FRC on Thursday
+l_fa_tue.zip Licenses for FRC on Tuesday
+l_fa_wed.zip Licenses for FRC on Wednesday
+l_LMpriv.zip All Licenses for Land Mobile-Private
+l_lp_fri.zip Licenses for Land Mobile-Private on Friday
+l_lp_mon.zip Licenses for Land Mobile-Private on Monday
+l_lp_sat.zip Licenses for Land Mobile-Private on Saturday
+l_lp_sun.zip Licenses for Land Mobile-Private on Sunday
+l_lp_thu.zip Licenses for Land Mobile-Private on Thursday
+l_lp_tue.zip Licenses for Land Mobile-Private on Tuesday
+l_lp_wed.zip Licenses for Land Mobile-Private on Wednesday
+l_LMcomm.zip All Licenses for Land Mobile-Commercial
+l_lc_fri.zip Licenses for Land Mobile-Commercial on Friday
+l_lc_mon.zip Licenses for Land Mobile-Commercial on Monday
+l_lc_sat.zip Licenses for Land Mobile-Commercial on Saturday
+l_lc_sun.zip Licenses for Land Mobile-Commercial on Sunday
+l_lc_thu.zip Licenses for Land Mobile-Commercial on Thursday
+l_lc_tue.zip Licenses for Land Mobile-Commercial on Tuesday
+l_lc_wed.zip Licenses for Land Mobile-Commercial on Wednesday
+l_LMbcast.zip All Licenses for Land Mobile-Broadcast Auxiliary
+l_lb_fri.zip Licenses for Land Mobile-Broadcast Auxiliary on Friday
+l_lb_mon.zip Licenses for Land Mobile-Broadcast Auxiliary on Monday
+l_lb_sat.zip Licenses for Land Mobile-Broadcast Auxiliary on Saturday
+l_lb_sun.zip Licenses for Land Mobile-Broadcast Auxiliary on Sunday
+l_lb_thu.zip Licenses for Land Mobile-Broadcast Auxiliary on Thursday
+l_lb_tue.zip Licenses for Land Mobile-Broadcast Auxiliary on Tuesday
+l_lb_wed.zip Licenses for Land Mobile-Broadcast Auxiliary on Wednesday
+l_mdsitfs.zip All Licenses for MDS/ITFS
+l_mi_fri.zip Licenses for MDS/ITFS on Friday
+l_mi_mon.zip Licenses for MDS/ITFS on Monday
+l_mi_sat.zip Licenses for MDS/ITFS on Saturday
+l_mi_sun.zip Licenses for MDS/ITFS on Sunday
+l_mi_thu.zip Licenses for MDS/ITFS on Thursday
+l_mi_tue.zip Licenses for MDS/ITFS on Tuesday
+l_mi_wed.zip Licenses for MDS/ITFS on Wednesday
+l_market.zip All Licenses for Market-Based
+l_mk_fri.zip Licenses for Market-Based on Friday
+l_mk_mon.zip Licenses for Market-Based on Monday
+l_mk_sat.zip Licenses for Market-Based on Saturday
+l_mk_sun.zip Licenses for Market-Based on Sunday
+l_mk_thu.zip Licenses for Market-Based on Thursday
+l_mk_tue.zip Licenses for Market-Based on Tuesday
+l_mk_wed.zip Licenses for Market-Based on Wednesday
+l_micro.zip All Licenses for Microwave
+l_mw_fri.zip Licenses for Microwave on Friday
+l_mw_mon.zip Licenses for Microwave on Monday
+l_mw_sat.zip Licenses for Microwave on Saturday
+l_mw_sun.zip Licenses for Microwave on Sunday
+l_mw_thu.zip Licenses for Microwave on Thursday
+l_mw_tue.zip Licenses for Microwave on Tuesday
+l_mw_wed.zip Licenses for Microwave on Wednesday
+l_paging.zip All Licenses for Paging
+l_pg_fri.zip License for Paging on Friday
+l_pg_mon.zip License for Paging on Monday
+l_pg_sat.zip License for Paging on Saturday
+l_pg_sun.zip License for Paging on Sunday
+l_pg_thu.zip License for Paging on Thursday
+l_pg_tue.zip License for Paging on Tuesday
+l_pg_wed.zip License for Paging on Wednesday
+l_ship.zip All Licenses for Ship
+l_sh_fri.zip License for Ship on Friday
+l_sh_mon.zip License for Ship on Monday
+l_sh_sat.zip License for Ship on Saturday
+l_sh_sun.zip License for Ship on Sunday
+l_sh_thu.zip License for Ship on Thursday
+l_sh_tue.zip License for Ship on Tuesday
+l_sh_wed.zip License for Ship on Wednesday
