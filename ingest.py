@@ -32,40 +32,40 @@ Base.metadata.create_all(engine)
 with Session(engine) as session:
     with session.begin():
         print("import entities")
-        with open("db/EN.dat", newline='\r\n') as fd:
+        with open("db/EN.dat", newline="\r\n") as fd:
             Entity.import_csv(fd, session)
- 
+
     with session.begin():
         print("import amateur")
-        with open("db/AM.dat", newline='\r\n') as fd:
+        with open("db/AM.dat", newline="\r\n") as fd:
             Amateur.import_csv(fd, session)
- 
+
     with session.begin():
         print("import history")
-        with open("db/HS.dat", newline='\r\n') as fd:
+        with open("db/HS.dat", newline="\r\n") as fd:
             History.import_csv(fd, session)
- 
+
     with session.begin():
         print("import headers")
-        with open("db/HD.dat", newline='\r\n') as fd:
+        with open("db/HD.dat", newline="\r\n") as fd:
             LicenseHeader.import_csv(fd, session)
- 
+
     with session.begin():
         print("import comments")
-        with open("test.dat", newline='\r\n') as fd:
+        with open("test.dat", newline="\r\n") as fd:
             Comment.import_csv(fd, session)
 
     with session.begin():
         print("import attachments")
-        with open("db/LA.dat", newline='\r\n') as fd:
+        with open("db/LA.dat", newline="\r\n") as fd:
             LicenseAttachment.import_csv(fd, session)
- 
+
     with session.begin():
         print("import special conditions")
-        with open("db/SC.dat", newline='\r\n') as fd:
+        with open("db/SC.dat", newline="\r\n") as fd:
             LicenseSpecialCondition.import_csv(fd, session)
- 
+
     with session.begin():
         print("import freeform special conditions")
-        with open("db/SF.dat", newline='\r\n') as fd:
+        with open("db/SF.dat", newline="\r\n") as fd:
             LicenseFreeformSpecialCondition.import_csv(fd, session)

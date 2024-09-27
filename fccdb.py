@@ -37,14 +37,20 @@ def validate_date_field(
             f"invalid date: '{value}': date value must be a datetime.date object or a string of the form mm/dd/yyyy"
         )
 
+
 class uls_dialect(csv.Dialect):
-    delimiter = '|'
+    delimiter = "|"
     quotechar = '"'
     doublequote = True
     skipinitialspace = False
-    lineterminator = '\r\n'
-    quoting = csv.QUOTE_NONE # needed to deal with some screwed up quoting in FCC source data
+    lineterminator = "\r\n"
+    quoting = (
+        csv.QUOTE_NONE
+    )  # needed to deal with some screwed up quoting in FCC source data
+
+
 csv.register_dialect("uls", uls_dialect)
+
 
 class Base(DeclarativeBase):
     @classmethod
@@ -54,27 +60,28 @@ class Base(DeclarativeBase):
 
     @classmethod
     def import_csv(cls, data: Iterable[str], session: Session, delimiter: str = "|"):
-
         def line_combiner(data: Iterable[str]) -> Iterable[str]:
-            '''Deal with weird quoting in ULS source files.
+            """Deal with weird quoting in ULS source files.
 
             Fields in ULS source files are unquoted, but in some cases contained embedded carriage returns. To
             avoid problems, we need to (a) disable universal newlines when opening the files, and (b) we need
             to identify terminal carriage returns as line-continuation characters, and (c) we need to replace
-            them with another character to keep the csv module happy.'''
+            them with another character to keep the csv module happy."""
 
             vline: list[str] = []
             for line in data:
                 # strip '\r\n' from end of line
-                line = line.removesuffix('\r\n')
-                vline.append(line.replace('\r', ' '))
-                if line.endswith('\r'):
+                line = line.removesuffix("\r\n")
+                vline.append(line.replace("\r", " "))
+                if line.endswith("\r"):
                     continue
-                yield ''.join(vline)
+                yield "".join(vline)
                 vline = []
 
         fieldnames = cls.get_field_names()
-        reader = csv.DictReader(line_combiner(data), fieldnames=fieldnames, dialect='uls')
+        reader = csv.DictReader(
+            line_combiner(data), fieldnames=fieldnames, dialect="uls"
+        )
         for row in reader:
             obj = cls(**row)
             session.add(obj)
