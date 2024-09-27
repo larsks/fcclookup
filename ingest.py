@@ -19,12 +19,12 @@ from fccdb import LicenseSpecialCondition
 from fccdb import LicenseFreeformSpecialCondition
 
 
-@listens_for(Engine, "connect")
-def on_connect(dbapi_con: DBAPIConnection, con_record: ConnectionPoolEntry):
-    cursor = dbapi_con.cursor()
-    cursor.execute("PRAGMA journal_mode=OFF")
-    cursor.execute("PRAGMA synchronous=OFF")
-    cursor.close()
+# @listens_for(Engine, "connect")
+# def on_connect(dbapi_con: DBAPIConnection, con_record: ConnectionPoolEntry):
+#    cursor = dbapi_con.cursor()
+#    cursor.execute("PRAGMA journal_mode=OFF")
+#    cursor.execute("PRAGMA synchronous=OFF")
+#    cursor.close()
 
 
 path = "license.db"
