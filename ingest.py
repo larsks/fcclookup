@@ -27,14 +27,7 @@ from fccdb import LicenseFreeformSpecialCondition
 #    cursor.close()
 
 
-path = "license.db"
-
-try:
-    os.remove(path)
-except FileNotFoundError:
-    pass
-
-engine = create_engine(f"sqlite:///{path}", echo=False)
+engine = create_engine(os.environ["FCC_DBURI"])
 Base.metadata.create_all(engine)
 with Session(engine) as session:
     with session.begin():
