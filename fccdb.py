@@ -389,9 +389,3 @@ class LicenseSpecialCondition(Base):
         if value is None or value == "":
             return None
         return int(value)
-
-
-if __name__ == "__main__":
-    engine = create_engine("sqlite:///license.db", echo=True)
-    Base.metadata.create_all(engine)
-    session = Session(engine)
