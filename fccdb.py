@@ -1,4 +1,4 @@
-from typing import override
+from typing import override, Any
 from collections.abc import Iterable
 
 import datetime
@@ -93,6 +93,9 @@ class Base(DeclarativeBase):
             f"{','.join([f'{key}={self.__dict__[key]!r}' for key in self.get_field_names() if key in self.__dict__])}"
             ")"
         )
+
+    def to_dict(self) -> dict[str, Any]:
+        return {k: getattr(self, k) for k in self.get_field_names()}
 
 
 class Entity(Base):
