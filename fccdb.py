@@ -133,7 +133,7 @@ class Entity(Base):
     linked_unique_system_identifier: Mapped[int] = mapped_column(Integer, nullable=True)
     linked_call_sign: Mapped[str] = mapped_column(String(10), nullable=True)
 
-    license: Mapped[list["Amateur"]] = relationship()
+    license: Mapped["Amateur"] = relationship()
     history: Mapped[list["History"]] = relationship()
     headers: Mapped[list["LicenseHeader"]] = relationship()
     attachments: Mapped[list["LicenseAttachment"]] = relationship()
