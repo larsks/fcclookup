@@ -1,3 +1,5 @@
+from typing import Literal
+
 import datetime
 
 from pydantic_xml import BaseXmlModel, attr, element
@@ -39,6 +41,21 @@ class Waypoint(BaseXmlModel):
     dgpsid: str | None = element(default=None)
 
 
-class GpxFile(BaseXmlModel, tag="gpx"):
+class GpxFile(
+    BaseXmlModel,
+    tag="gpx",
+    nsmap={
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "": "http://www.topografix.com/GPX/1/1",
+    },
+):
+    schemaLocation: Literal[
+        "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+    ] = attr(
+        default="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd",
+        name="schemaLocation",
+        ns="xsi",
+    )
+    version: Literal["1.1"] = attr(default="1.1")
     metadata: Metadata | None = None
     wpt: list[Waypoint] = []
